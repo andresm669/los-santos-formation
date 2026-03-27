@@ -14,19 +14,23 @@ The modeling was carried out using [GemPy](https://www.gempy.org/) 2.3.1, a free
 ### Repository Structure
 
 ​```
-├── data/
-│   ├── regional/
-│   │   ├── surfaces_regional.txt      # Surface points - regional model
-│   │   └── orientations_regional.txt  # Orientation data - regional model
-│   └── detail/
-│       ├── surfaces_detail.txt        # Surface points - detail model
-│       └── orientations_detail.txt    # Orientation data - detail model
-├── output/
-│   ├── regional_model.vtk             # Regional model (3D)
-│   └── detail_model.vtk               # Detail model (3D)
-└── figures/
-    ├── regional_model.png
-    └── detail_model.png
+data/
+        regional/
+            surfaces_regional.txt
+            orientations_regional.txt
+        detail/
+            surfaces_detail.txt
+            orientations_detail.txt
+    output/
+        regional_model.vtkjs
+        detail_model.vtkjs
+    figures/
+        regional_model.png
+        detail_model.png
+    README.md
+    LICENSE
+    environment.yml
+    
 ​```
 
 ### Results
