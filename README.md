@@ -41,7 +41,7 @@ environment.yml
 
 | Regional Model | Detail Model |
 |---------------|--------------|
-| ![Regional Model](figures/regional_model.png) | ![Detail Model](figures/detail_model.png) |
+| ![Regional Model](Figures/Regional_model/Regional_model.png) | ![Detail Model](Figures/Detailed_model/detailed.png) |
 
 ### How to visualize the VTK files
 
