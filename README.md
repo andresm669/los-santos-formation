@@ -35,8 +35,6 @@ LICENSE
 README.md
 environment.yml
 ```
-​
-
 ### Results
 
 | Regional Model | Detail Model |
