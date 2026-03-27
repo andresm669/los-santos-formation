@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Los Santos Formation - 3D Geological Model</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header {
+      padding: 16px 24px;
+      border-bottom: 1px solid #21262d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e6edf3;
+    }
+    header p {
+      font-size: 0.75rem;
+      color: #8b949e;
+    }
+    .controls {
+      display: flex;
+      gap: 8px;
+    }
+    button {
+      background: #21262d;
+      color: #e6edf3;
+      border: 1px solid #30363d;
+      padding: 6px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+    }
+    button:hover { background: #30363d; }
+    button.active {
+      background: #1f6feb;
+      border-color: #1f6feb;
+    }
+    #viewer {
+      flex: 1;
+      width: 100%;
+    }
+    footer {
+      padding: 10px 24px;
+      border-top: 1px solid #21262d;
+      font-size: 0.75rem;
+      color: #8b949e;
+      display: flex;
+      justify-content: space-between;
+    }
+    footer a { color: #58a6ff; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Los Santos Formation — 3D Geological Model</h1>
+    <p>Sánchez-Mateus & Duarte-Guevara (2025) · Universidad Industrial de Santander</p>
+  </div>
+  <div class="controls">
+    <button class="active" onclick="loadModel('regional')">Regional Model</button>
+    <button onclick="loadModel('detail')">Detail Model</button>
+  </div>
+</header>
+
+<iframe id="viewer"
+  src="https://kitware.github.io/vtk-js/examples/SceneExplorer/index.html?fileURL=https://raw.githubusercontent.com/andresm669/los-santos-formation/main/Outputs/Regional_model.vtkjs"
+  frameborder="0">
+</iframe>
+
+<footer>
+  <span>Visualized with <a href="https://vtk.js" target="_blank">vtk.js</a></span>
+  <span><a href="https://github.com/andresm669/los-santos-formation" target="_blank">View repository</a></span>
+</footer>
+
+<script>
+  const models = {
+    regional: 'https://raw.githubusercontent.com/andresm669/los-santos-formation/main/Outputs/Regional_model.vtkjs',
+    detail: 'https://raw.githubusercontent.com/andresm669/los-santos-formation/main/Outputs/Detailed_model.vtkjs'
+  };
+
+  function loadModel(type) {
+    const viewer = document.getElementById('viewer');
+    viewer.src = `https://kitware.github.io/vtk-js/examples/SceneExplorer/index.html?fileURL=${models[type]}`;
+    document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
