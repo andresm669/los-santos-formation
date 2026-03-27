@@ -1,5 +1,3 @@
-# los-santos-formation
-3D geological modeling of the Los Santos Formation using GemPy 
 # Geological Modeling of the Los Santos Formation / Modelo Geológico de la Formación Los Santos
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
