@@ -13,25 +13,29 @@ The modeling was carried out using [GemPy](https://www.gempy.org/) 2.3.1, a free
 
 ### Repository Structure
 
-​```
-data/
-        regional/
-            surfaces_regional.txt
-            orientations_regional.txt
-        detail/
-            surfaces_detail.txt
-            orientations_detail.txt
-    output/
-        regional_model.vtkjs
-        detail_model.vtkjs
-    figures/
-        regional_model.png
-        detail_model.png
-    README.md
-    LICENSE
-    environment.yml
-    
-​```
+### Repository Structure / Estructura del repositorio
+```
+Data/
+├── Regional_data/
+│   ├── Orientation_data.txt
+│   └── Surface_data.txt
+└── Upper_Member_data/
+    ├── Orientation_data.txt
+    └── Surface_data.txt
+Figures/
+├── Detailed_model/
+│    ├── detailed.png
+│── Regional_model/
+└──── Regional_model.png
+Outputs/
+├── Detailed_model.vtkjs
+└── Regional_model.vtkjs
+
+LICENSE
+README.md
+environment.yml
+```
+​
 
 ### Results
 
