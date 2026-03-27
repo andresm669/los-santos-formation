@@ -3,6 +3,8 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![GemPy](https://img.shields.io/badge/GemPy-2.3.1-blue)](https://www.gempy.org/)
 
+> 🌐 **[Explore the 3D models interactively](https://andresm669.github.io/los-santos-formation)**
+
 This repository contains the data and results of the 3D geological modeling of the Los Santos Formation, developed as part of the thesis:
 
 > *3D Geological Modeling of the Los Santos Formation to Strengthen the Hydrogeological Model of the Mesa de los Santos (Santander) Using Open-Source Tools*
@@ -39,24 +41,15 @@ environment.yml
 |---------------|--------------|
 | ![Regional Model](Figures/Regional_model/Regional_model.png) | ![Detail Model](Figures/Detailed_model/detailed.png) |
 
-### How to visualize the VTK files
+### Interactive 3D Viewer
 
-The `.vtk` files can be opened with [ParaView](https://www.paraview.org/), a free and open-source visualization software.
+Explore the models directly in your browser — no installation required:
 
-1. Download and install ParaView from [paraview.org](https://www.paraview.org/)
-2. Open ParaView and go to `File > Open`
-3. Select the `.vtk` file
-4. Click `Apply` in the Properties panel
+**[Launch 3D Viewer](https://andresm669.github.io/los-santos-formation)**
 
-### How to reproduce the models
-
-1. Clone this repository
-2. Install the environment:
-​```bash
-conda env create -f environment.yml
-conda activate gempy_env
-​```
-3. Load the data files into GemPy following the [official documentation](https://docs.gempy.org/)
+Alternatively, the `.vtkjs` files can be downloaded from the `Outputs/` folder and 
+opened with the [vtkjs Scene Explorer](https://kitware.github.io/vtk-js/examples/SceneExplorer.html) 
+by dragging and dropping the file into the viewer.
 
 ### Citation
 
